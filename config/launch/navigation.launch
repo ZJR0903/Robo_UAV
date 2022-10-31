@@ -1,0 +1,7 @@
+<launch>
+	<param name="config_folder" type="string" value="$(find config)" />
+	<node pkg="smooth_control" type="smooth_control" name="smooth_control_node" output="screen"/> 
+	<node pkg="go" type="go" name="go" output="screen"/>
+  <node pkg="unitree_nav_ros" type="unitree_nav_ros" name="unitree_nav_ros_node" output="screen"/> 
+	<node pkg="detect" type="detect.py" name="image1" output="screen"/> 
+</launch>

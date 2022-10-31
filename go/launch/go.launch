@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="go" type="go" name="go" output="screen"/>
+	<node pkg="smooth_control" type="smooth_control" name="smooth_control" output="screen"/>
+	<node pkg="go" type="IMAGE" name="IMAGE" output="screen"/>
+
+	 <include file="/home/zjr/IntelligentUAVChampionshipBase/src/config/launch/navigation.launch">
+	</include>
+</launch>
